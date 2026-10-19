@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prática — Animações e Interatividade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="marca">
+      <span class="marca-icone">&lt;/&gt;</span>
+      <div>
+        <strong>Programação Front-End</strong>
+        <small>Semanas 23 + 24</small>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#transition">Transition</a>
+      <a href="#keyframes">@keyframes</a>
+      <a href="#javascript">JavaScript</a>
+    </nav>
+
+    <button class="tema" id="botaoTema">☾ Escuro</button>
+  </header>
+
+  <main id="inicio">
+    <section class="introducao">
+      <p class="etiqueta">REGISTRO 2 · SEMANA 24</p>
+      <h1>Prática — Animações e<br> Interatividade</h1>
+      <p class="subtitulo">
+        Pratique três habilidades que deixam uma página
+        mais dinâmica e agradável.
+      </p>
+    </section>
+
+    <section class="cartoes">
+
+      <article class="cartao cartao-azul" id="transition">
+        <span class="numero">01</span>
+        <div class="icone">↗</div>
+        <h2>Transition</h2>
+        <p>Aplicar uma transição suave em um botão, card ou imagem.</p>
+
+        <div class="exemplo">
+          <code>transition: 0.3s ease;</code>
+        </div>
+
+        <button class="botao-exemplo botao-transition">
+          Passe o mouse aqui
+        </button>
+        <p class="dica">Experimente passar o mouse sobre o botão.</p>
+      </article>
+
+      <article class="cartao cartao-roxo" id="keyframes">
+        <span class="numero">02</span>
+        <div class="icone">✦</div>
+        <h2>@keyframes</h2>
+        <p>Criar uma animação com movimento e mudança de opacidade.</p>
+
+        <div class="exemplo">
+          <code>@keyframes entrada { ... }</code>
+        </div>
+
+        <div class="palco">
+          <span class="bolinha" id="bolinha"></span>
+        </div>
+
+        <button class="botao-exemplo" id="botaoAnimar">
+          Reproduzir animação
+        </button>
+      </article>
+
+      <article class="cartao cartao-verde" id="javascript">
+        <span class="numero">03</span>
+        <div class="icone">✓</div>
+        <h2>JavaScript</h2>
+        <p>Usar um clique para alterar a classe de um elemento.</p>
+
+        <div class="exemplo">
+          <code>classList.toggle('ativo')</code>
+        </div>
+
+        <div class="painel-interativo" id="painelInterativo">
+          <span class="estrela">✦</span>
+          <strong>Interaja comigo!</strong>
+          <span>Clique no botão para mudar meu estilo.</span>
+        </div>
+
+        <button class="botao-exemplo" id="botaoAtivo">
+          Ativar / desativar efeito
+        </button>
+      </article>
+
+    </section>
+
+    <section class="como-funciona">
+      <h2>Como essas tecnologias funcionam?</h2>
+
+      <p><strong>1. Transition:</strong> deixa as mudanças visuais suaves.</p>
+      <p><strong>2. @keyframes:</strong> cria animações personalizadas.</p>
+      <p><strong>3. JavaScript:</strong> responde às ações do usuário.</p>
+    </section>
+
+    <footer>
+      <span>Prática de Front-End</span>
+      <span>HTML · CSS · JavaScript</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
